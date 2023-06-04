@@ -189,6 +189,9 @@ body {
 .profile-info h1, .profile-info h5, .profile-info p {
   text-align: left; }
 
+.profile-info img {
+  border-radius: 100px; }
+
 .profile-info .profile-image {
   max-width: 150px;
   border-radius: 100px;
