@@ -73,20 +73,66 @@
             <div class="inner-content rounded">
                 <h3 class="section-title">Contacts</h3>
                 <ul class="vertical-list colored-icons">
-                    <li><i class="fa-solid fa-location-dot"></i> <span>Philippines</span></li>
-                    <li><a href="tel:+639184188296"><i class="fa-solid fa-phone"></i> <span>+63 918 4188 296</span></a></li>
+                    <li><i class="fa-solid fa-location-dot"></i><span>Philippines</span></li>
+                    <li><a href="tel:+639184188296"><i class="fa-solid fa-phone"></i><span>+63 918 4188 296</span></a></li>
+                </ul>
+            </div>
+            <div class="inner-content rounded">
+                <h3 class="section-title">Timzeone</h3>
+                <ul class="vertical-list colored-icons">
+                    <li><i class="fa-solid fa-business-time"></i><span>Philippines</span></li>
+                    <li><i class="fa-solid fa-calendar"></i><span id="currentDate">00/00/000</span></li>
+                    <li><i class="fa-solid fa-clock"></i><span id="currentTime">00:00</span></li>
                 </ul>
             </div>
             <div class="inner-content rounded">
                 <h3 class="section-title">Languages</h3>
                 <ul class="vertical-list colored-icons">
-                    <li><i class="fa-regular fa-flag"></i> <span>Filipino</span></li>
-                    <li><i class="fa-regular fa-flag"></i> <span>English</span></li>
+                    <li><i class="fa-regular fa-flag"></i><span>Filipino</span></li>
+                    <li><i class="fa-regular fa-flag"></i><span>English</span></li>
                 </ul>
             </div>
         </aside>
     </div>
 
+    <script>
+$(document).ready(function () {
+    var currentDate = new Date();
+    var options = { timeZone: 'Asia/Manila', timeZoneName: 'short' };
+    var formatter = new Intl.DateTimeFormat('en-US', options);
+    var formattedDateTime = formatter.format(currentDate);
+    $('#currentDate').text(formattedDateTime);
+
+function getTime() {
+  var now = new Date();
+  var utcOffset = now.getTimezoneOffset() * 60000; // Get the UTC offset in milliseconds
+  var gmt8Offset = 8 * 60 * 60000; // Offset for GMT+8 timezone in milliseconds
+  var currentTime = new Date(now.getTime() + utcOffset + gmt8Offset);
+
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+  var seconds = currentTime.getSeconds();
+
+  var ampm = hours >= 12 ? 'PM' : 'AM'; // Determine if it's AM or PM
+  hours = hours % 12; // Convert to 12-hour format
+  hours = hours ? hours : 12; // Handle midnight (0 hours)
+
+  var timeString = hours + ':' + padZero(minutes) + ':' + padZero(seconds) + ' ' + ampm;
+
+  $('#currentTime').text(timeString);
+}
+
+function padZero(num) {
+  return num < 10 ? '0' + num : num;
+}
+
+getTime(); // Initial call to display time immediately
+
+setInterval(getTime, 1000); // Refresh time every 1 second
+
+
+});
+    </script>
 </body>
 </html>
  
