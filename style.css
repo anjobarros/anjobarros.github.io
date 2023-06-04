@@ -190,7 +190,8 @@ body {
   text-align: left; }
 
 .profile-info img {
-  border-radius: 100px; }
+  border-radius: 100px;
+  background-color: var(--accent-color); }
 
 .profile-info .profile-image {
   max-width: 150px;
