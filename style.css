@@ -1,5 +1,5 @@
 :root {
-  --primary-color: green;
+  --primary-color: #d34e60;
   --accent-color: #64729d;
   --secondary-color: #1d1d1f;
   --mute-color: #9a9a9a;
@@ -377,18 +377,5 @@ body {
   }
   .profile-info img.w-30 {
     max-width: 100px;
-  }
-}
-@media screen and (max-width: 428px) {
-  :root {
-    --font-size: 16px;
-    --gap: 15px;
-    --radius: 10px;
-  }
-  .main-container > aside:last-child .inner-content:first-child, .main-container > aside:last-child .inner-content:nth-child(2) {
-    max-width: 100% !important;
-  }
-  .main-container > aside:last-child .inner-content:not(:first-child), .main-container > aside:last-child .inner-content:not(:nth-child(2)) {
-    max-width: calc(50% - var(--gap) / 2 * 3.5);
   }
 }
