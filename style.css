@@ -333,19 +333,6 @@ body {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 428px) {
-  :root {
-    --font-size: 16px;
-    --gap: 15px;
-    --radius: 10px;
-  }
-  .main-container > aside:last-child .inner-content:first-child, .main-container > aside:last-child .inner-content:nth-child(2) {
-    max-width: 100% !important;
-  }
-  .main-container > aside:last-child .inner-content:not(:first-child), .main-container > aside:last-child .inner-content:not(:nth-child(2)) {
-    max-width: calc(50% - var(--gap) / 2 * 3.5);
-  }
-}
 @media screen and (max-width: 834px) {
   :root {
     --font-size: 18px;
@@ -374,12 +361,26 @@ body {
     order: 3;
   }
   .main-container > aside, .main-container > .content {
-    max-width: 100%;
+    max-width: 100% !important;
+    width: 100%;
   }
   .profile-info .ai-start {
     align-items: center;
   }
   .profile-info img.w-30 {
     max-width: 100px;
+  }
+}
+@media screen and (max-width: 428px) {
+  :root {
+    --font-size: 16px;
+    --gap: 15px;
+    --radius: 10px;
+  }
+  .main-container > aside:last-child .inner-content:first-child, .main-container > aside:last-child .inner-content:nth-child(2) {
+    max-width: 100% !important;
+  }
+  .main-container > aside:last-child .inner-content:not(:first-child), .main-container > aside:last-child .inner-content:not(:nth-child(2)) {
+    max-width: calc(50% - var(--gap) / 2 * 3.5);
   }
 }
