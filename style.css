@@ -339,6 +339,9 @@ body {
     --gap: 20px;
     --radius: 10px;
   }
+  .main-container {
+    display: block;
+  }
   .main-container > * {
     height: auto;
   }
