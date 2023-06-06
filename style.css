@@ -201,7 +201,7 @@ body {
 }
 
 .main-container {
-  display: block;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 100vh;
@@ -338,6 +338,11 @@ body {
     --font-size: 18px;
     --gap: 20px;
     --radius: 10px;
+  }
+  .main-container {
+    height: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
   .main-container > * {
     height: auto;
