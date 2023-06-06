@@ -201,7 +201,7 @@ body {
 }
 
 .main-container {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 100vh;
