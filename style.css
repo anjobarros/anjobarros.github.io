@@ -332,17 +332,14 @@ body {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 834px) {
+@media (min-width: 540px) {
   :root {
     --font-size: 18px;
     --gap: 20px;
     --radius: 10px;
   }
   .main-container {
-    display: flex;
     height: auto;
-    flex-wrap: nowrap;
-    flex-direction: column;
   }
   .main-container > * {
     height: auto;
