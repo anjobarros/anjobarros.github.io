@@ -332,7 +332,7 @@ body {
   margin-right: 10px;
 }
 
-@media (min-width: 540px) {
+@media (max-width: 540px) {
   :root {
     --font-size: 18px;
     --gap: 20px;
