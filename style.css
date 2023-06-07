@@ -27,7 +27,11 @@
 }
 
 body{
-  padding: var(--gap);
+  display: block;
+padding: var(--gap);
+}
+body > div{
+  /* padding: var(--gap); */
   width: 100%;
   height: 100vh;
   display: flex;
