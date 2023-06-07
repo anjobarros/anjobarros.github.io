@@ -332,7 +332,7 @@ body {
   margin-right: 10px;
 }
 
-@media (max-width: 540px) {
+@media (min-width: 428px) {
   :root {
     --font-size: 18px;
     --gap: 20px;
@@ -373,11 +373,17 @@ body {
     max-width: 100px;
   }
 }
-@media screen and (max-width: 428px) {
+@media (min-width: 200px) {
   :root {
     --font-size: 16px;
     --gap: 15px;
     --radius: 10px;
+  }
+  .main-container > * {
+    min-width: 100%;
+  }
+  .main-container .content {
+    order: 3;
   }
   .main-container > aside:last-child .inner-content:first-child, .main-container > aside:last-child .inner-content:nth-child(2) {
     max-width: 100% !important;
