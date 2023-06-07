@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #d34e60;
+  --primary-color: #64729d;
   --accent-color: #64729d;
   --secondary-color: #1d1d1f;
   --mute-color: #9a9a9a;
@@ -24,6 +24,25 @@
 @font-face {
   font-family: "whitneylight";
   src: url("src/fonts/whitneylight.woff2") format("woff2");
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column
+}
+body img{
+  max-width: 150px;
+  border-radius: 100%;
+  margin: 0 auto 20px;
+  display: block;
+}
+.gap{
+  margin-bottom: var(--gap);
 }
 * {
   margin: 0;
@@ -204,6 +223,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  height: 100vh;
   padding: var(--gap);
 }
 .main-container .transparent {
@@ -330,65 +350,4 @@ body {
 }
 .navigation > * i {
   margin-right: 10px;
-}
-
-@media (min-width: 428px) {
-  :root {
-    --font-size: 18px;
-    --gap: 20px;
-    --radius: 10px;
-  }
-  .main-container {
-    height: auto;
-  }
-  .main-container > * {
-    height: auto;
-  }
-  .main-container > aside:last-child {
-    order: 2;
-    display: flex;
-    flex-wrap: wrap;
-    gap: calc(var(--gap) / 2);
-    justify-content: space-between;
-    margin-bottom: calc(var(--gap) * 2);
-  }
-  .main-container > aside:last-child .inner-content {
-    margin-bottom: 0;
-    width: 100%;
-  }
-  .main-container > aside:last-child .inner-content:not(:first-child) {
-    max-width: calc(33.3333333333% - var(--gap) / 2 * 3.5);
-  }
-  .main-container .content {
-    order: 3;
-  }
-  .main-container > aside, .main-container > .content {
-    max-width: 100% !important;
-    width: 100%;
-  }
-  .profile-info .ai-start {
-    align-items: center;
-  }
-  .profile-info img.w-30 {
-    max-width: 100px;
-  }
-}
-@media (min-width: 200px) {
-  :root {
-    --font-size: 16px;
-    --gap: 15px;
-    --radius: 10px;
-  }
-  .main-container > * {
-    min-width: 100%;
-  }
-  .main-container .content {
-    order: 3;
-  }
-  .main-container > aside:last-child .inner-content:first-child, .main-container > aside:last-child .inner-content:nth-child(2) {
-    max-width: 100% !important;
-  }
-  .main-container > aside:last-child .inner-content:not(:first-child), .main-container > aside:last-child .inner-content:not(:nth-child(2)) {
-    max-width: calc(50% - var(--gap) / 2 * 3.5);
-  }
 }

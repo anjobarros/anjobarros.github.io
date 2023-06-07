@@ -1,149 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/c32acd5327.js" crossorigin="anonymous"></script>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="main-container">
-        <aside class="profile">            
-            <div class="inner-content profile-info rounded transparent">
-                <div class="flex ai-start jc-center">
-                    <img class="flex-inner w-30" src="/src/image/profile.jpg" alt="anjo barros avatar">
-                    <!-- <img class="flex-inner w-30" src="https://www.shareicon.net/data/512x512/2016/05/24/770117_people_512x512.png" alt="anjo barros avatar"> -->
-                    <div class="flex-inner w-70">
-                        <h1 class="remove-mb">Anjo Barros</h1>
-                        <h5 class="sm">WordPress Developer</h5>
-                        <ul class="socials flex jc-start">
-                            <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="brands fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="brands fa-brands fa-linkedin-in"></i></a></li>
-                            <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="brands fa-solid fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="inner-content transparent">
-                <ul class="navigation">
-                    <li class="active"><a href="#"><i class="fa-solid fa-star"></i>Employment History<span class="alt">2</span></a></li>
-                    <li><a href="#"><i class="fa-solid fa-certificate"></i>Certificates<span class="alt">10</span></a></li>
-                    <li><a href="#"><i class="fa-solid fa-database"></i>Expertise</a></li>
-                    <li><a href="#"><i class="fa-solid fa-quote-left"></i>Client Stories</a></li>
-                </ul>
-            </div>    
-        </aside>
-        <div class="content">
-            <div class="inner-content">
-                <div class="heading">
-                    <h2>Employment History</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus vel totam error eius et.</p>
-                </div>
-                <div class="feeds">
-                    <h3>WordPress Developer<span>- EZ Bacolod</span></h3>
-                    <h6><i class="fa-regular fa-calendar"></i> Jan 2019 - Jan 2021</h6>
-                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing elit</a>. Debitis eos incidunt, vero inventore ipsam tenetur architecto voluptatum quo suscipit cumque reiciendis totam qui dolorem temporibus facilis nisi commodi. Laudantium, ratione.</p>
-                    <ul class="list">
-                        <li>Debitis eos incidunt</li>
-                        <li>vero inventore</li>
-                        <li>totam qui dolorem temporibus</li>
-                        <li>ipsum dolor sit amet</li>
-                    </ul>
-                </div>
-                <div class="feeds">
-                    <h3>WordPress Developer<span>- EZ Bacolod</span></h3>
-                    <h6><i class="fa-regular fa-calendar"></i> Jan 2019 - Jan 2021</h6>
-                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing elit</a>. Debitis eos incidunt, vero inventore ipsam tenetur architecto voluptatum quo suscipit cumque reiciendis totam qui dolorem temporibus facilis nisi commodi. Laudantium, ratione.</p>
-                    <ul class="list">
-                        <li>Debitis eos incidunt</li>
-                        <li>vero inventore</li>
-                        <li>totam qui dolorem temporibus</li>
-                        <li>ipsum dolor sit amet</li>
-                    </ul>
-                </div>
-                <div class="feeds">
-                    <h3>WordPress Developer<span>- EZ Bacolod</span></h3>
-                    <h6><i class="fa-regular fa-calendar"></i> Jan 2019 - Jan 2021</h6>
-                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing elit</a>. Debitis eos incidunt, vero inventore ipsam tenetur architecto voluptatum quo suscipit cumque reiciendis totam qui dolorem temporibus facilis nisi commodi. Laudantium, ratione.</p>
-                    <ul class="list">
-                        <li>Debitis eos incidunt</li>
-                        <li>vero inventore</li>
-                        <li>totam qui dolorem temporibus</li>
-                        <li>ipsum dolor sit amet</li>
-                    </ul>
-                </div>
-            </div>            
-        </div>
-        <aside>
-            <div class="inner-content rounded">
-                <h3 class="section-title">Let Me Help You!</h3>
-                <p>As someone with experience in troubleshooting, bug fixing, website optimization, building pages, and content editing, I can assist you in streamlining your website development process and making your work faster by handling these tasks for you.</p>
-            </div>
-            <div class="inner-content rounded">
-                <h3 class="section-title">Contacts</h3>
-                <ul class="vertical-list colored-icons">
-                    <li><i class="fa-solid fa-location-dot"></i><span>Philippines</span></li>
-                    <li><a href="tel:+639184188296"><i class="fa-solid fa-phone"></i><span>+63 918 4188 296</span></a></li>
-                </ul>
-            </div>
-            <div class="inner-content rounded">
-                <h3 class="section-title">Timzeone</h3>
-                <ul class="vertical-list colored-icons">
-                    <li><i class="fa-solid fa-business-time"></i><span>Philippines</span></li>
-                    <li><i class="fa-solid fa-calendar"></i><span id="currentDate">00/00/000</span></li>
-                    <li><i class="fa-solid fa-clock"></i><span id="currentTime">00:00</span></li>
-                </ul>
-            </div>
-            <div class="inner-content rounded">
-                <h3 class="section-title">Languages</h3>
-                <ul class="vertical-list colored-icons">
-                    <li><i class="fa-regular fa-flag"></i><span>Filipino</span></li>
-                    <li><i class="fa-regular fa-flag"></i><span>English</span></li>
-                </ul>
-            </div>
-        </aside>
+    <div class="gap">
+        <img class="flex-inner w-30" src="/src/image/profile.jpg" alt="anjo barros avatar">
+        <p><b>Anjo Barros</b> | Website Developer</p>
     </div>
-
-    <script>
-$(document).ready(function () {
-    var currentDate = new Date();
-    var options = { timeZone: 'Asia/Manila', timeZoneName: 'short' };
-    var formatter = new Intl.DateTimeFormat('en-US', options);
-    var formattedDateTime = formatter.format(currentDate);
-    $('#currentDate').text(formattedDateTime);
-
-function getTime() {
-  var now = new Date();
-  var utcOffset = now.getTimezoneOffset() * 60000; // Get the UTC offset in milliseconds
-  var gmt8Offset = 8 * 60 * 60000; // Offset for GMT+8 timezone in milliseconds
-  var currentTime = new Date(now.getTime() + utcOffset + gmt8Offset);
-
-  var hours = currentTime.getHours();
-  var minutes = currentTime.getMinutes();
-  var seconds = currentTime.getSeconds();
-
-  var ampm = hours >= 12 ? 'PM' : 'AM'; // Determine if it's AM or PM
-  hours = hours % 12; // Convert to 12-hour format
-  hours = hours ? hours : 12; // Handle midnight (0 hours)
-
-  var timeString = hours + ':' + padZero(minutes) + ':' + padZero(seconds) + ' ' + ampm;
-
-  $('#currentTime').text(timeString);
-}
-
-function padZero(num) {
-  return num < 10 ? '0' + num : num;
-}
-
-getTime(); // Initial call to display time immediately
-
-setInterval(getTime, 1000); // Refresh time every 1 second
-
-
-});
-    </script>
+    <h2>Stand by</h2>
+    <h1>LAUNCHING THE SITE SOON!</h1>
 </body>
 </html>
- 
